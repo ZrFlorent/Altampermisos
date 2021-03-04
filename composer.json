@@ -1,0 +1,32 @@
+{
+    "name": "zrflorent/altamrolespermisosdevel",
+    "description": "Paquete de Sistema de roles y permisos realizados en laravel",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leobardo Florentino Altamirano",
+            "email": "32307978+ZrFlorent@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ZrFlorent\\Altamrolespermisosdevel\\":"src/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.13"
+    },
+    "extra": {
+        "laravel" : {
+            "providers" : [
+                "ZrFlorent\\Altamrolespermisosdevel\\AltamPermisosServicesProvider",
+                "ZrFlorent\\Altamrolespermisosdevel\\AuthServiceProvider",
+                "ZrFlorent\\Altamrolespermisosdevel\\EventServiceProvider"
+
+            ]
+        }
+    }
+
+}
